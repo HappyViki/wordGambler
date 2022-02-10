@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Gambler</title>
+    <style>
+        .content {
+            margin: 0 auto;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .word-field {
+            margin: 16px 0;
+        }
+
+        .letters-container, .btn, .word-field {
+            text-transform: uppercase;
+        }
+
+        .btn, .letters-container, .word-field, .points {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .submit-btn {
+            background: green;
+        }
+
+        .restart-btn {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="points"></div>
+    <div class="content">
+        <div class="letters-container"></div>
+        <input class="word-field" type="text">
+        <button class="btn submit-btn">push me</button>
+        <button class="btn restart-btn hide">start over</button>
+    </div>
+    <script src="wordGambler.js"></script>
+</body>
+</html>
